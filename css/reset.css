@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'crow';
+  src: url(../font/October\ Crow.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  border: none;
+}

@@ -1,0 +1,133 @@
+
+main {
+  background: #090b11;
+  width: 100%;
+  height: 100vh;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px 50px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  max-width: 800px;
+  padding: 30px;
+  margin: 0 0 30px;
+
+  font-size: 40px;
+  color: #ECC839;
+  text-shadow: #FF5B00;
+  font-family: 'crow';
+
+  background: #2B0E11;
+  border: 2px solid #EE9430;
+  box-shadow: 0px 0px 8px #B63C00;
+  border-radius: 12px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card {
+  aspect-ratio: 2/3;
+  width: 100%;
+  background: #15181F;
+  border-radius: 12px;
+
+  position: relative;
+  transition: all 400ms ease;
+  transform-style: preserve-3d;
+}
+
+.face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.front {
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotatey(180deg); 
+  border-radius: 12px;
+}
+
+.back {
+  background: #2b0e11;
+  border: 2px solid #EE9430;
+  box-shadow: 0px 0px 8px #B63C00;
+  border-radius: 12px;
+
+  backface-visibility: hidden;
+  background-image: url(../image/ggg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.back p {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+
+  font-family: 'Crow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 83px;
+  
+  color: #ECC839;
+  text-shadow: 0px 0px 8px #FF5B00;
+}
+
+.reveal-card {
+  transform: rotateY(180deg);
+}
+
+.disabled-card {
+  opacity: 0.5;
+}
+
+.button-audio {
+  position: absolute; 
+  width: 100%;
+  max-width: 30px;
+  height: 30px;
+
+  margin-top: 20px;
+  margin-left: 20px;
+  background: transparent;
+
+  border-radius: 50%;
+  
+  cursor: pointer;
+  padding: 5px;
+  background: #ffffff;
+}
+
+.img-btn {
+  width: 100%;
+  max-width: 30px;
+  border-radius: 50%;
+}
+
+.button-audio:disabled {
+  background: #ffffff;
+  text-shadow: 0px 0px 0px;
+  cursor: auto; 
+  cursor: pointer;
+}

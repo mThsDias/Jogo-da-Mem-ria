@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../image/icons8-zumbi-64.png" type="image/x-icon">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/game.css">
+  <link rel="stylesheet" href="../css/modal.css">
+  <link rel="stylesheet" href="../css/mediaQuery.css">
+  <script defer src="../js/game.js"></script>
+  <title>Jogo da Memória</title>
+</head>
+<body>
+
+  <audio class="midia" preload="metadata">
+    
+    <source src="../audio/FUNDO MUSICAL _ SUSPENSE _ TERROR _ FORTE _ TEATRO _ PAD by JotaMaker (64 kbps).mp3" type="audio/mpeg">
+    
+  </audio>
+  
+  <button disabled class="button-audio">
+
+    <img class="img-btn" src="../image/audiomuted.png" alt="audio">
+
+  </button>
+  
+  <main>
+
+    <div class="modal">
+      <div class="content">
+        <div class="icon">
+          <img src="../image/web.svg" alt="teia">
+        </div>
+        <h1 class="title">BUUH!!</h1>
+        <p class="text">Parabens <span class="player-name"></span> seu tempo foi de <span class="player-time"></span> segundos.</p>
+        <button class="button">Jogar Novamente</button>
+      </div>
+    </div>
+
+    <header>
+      <span class="player"></span>
+      <span>Tempo : <span class="timer">00</span></span>
+    </header>
+
+    <div class="grid"></div>
+
+  </main>
+
+  
+</body>
+</html>
